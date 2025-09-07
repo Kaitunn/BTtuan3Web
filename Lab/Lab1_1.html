@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Giới thiệu bản thân</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;                /* chiếm toàn màn hình */
+      background: #f5f7fa;
+    }
+
+    .container {
+      display: flex;
+      gap: 20px;
+      background: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      max-width: 800px;
+      width: 90%;
+    }
+
+    .avatar {
+      flex: 0 0 180px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .avatar img {
+      width: 160px;
+      height: 160px;
+      border-radius: 50%;   /* bo tròn ảnh */
+      object-fit: cover;    /* không méo ảnh */
+      border: 3px solid #ccc;
+    }
+
+    .info {
+      flex: 1;
+    }
+
+    h1 {
+      margin: 0 0 10px;
+      font-size: 24px;
+      color: #2c3e50;
+    }
+
+    p {
+      margin: 8px 0;
+      line-height: 1.5;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    /* Responsive cho màn nhỏ */
+    @media (max-width: 600px) {
+      .container {
+        flex-direction: column;
+        text-align: center;
+      }
+      ul {
+        text-align: left;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="avatar">
+      <!-- 👉 Chèn ảnh đại diện của bạn vào đây -->
+      <img src="../Img/Phần 1.jpg" alt="Ảnh đại diện">
+    </div>
+    <div class="info">
+      <h1>Đặng Tuấn Khải</h1>
+      <p>Email: tuankhaidang82@gmail.com</p>
+      <p>SĐT: 0775913467</p>
+      <p>Giới tính: Nam</p>
+      <h3>Sở thích</h3>
+      <ul>
+        <li>Đọc sách</li>
+        <li>Lập trình web</li>
+        <li>Nghe nhạc</li>
+      </ul>
+    </div>
+  </div>
+</body>
+</html>
