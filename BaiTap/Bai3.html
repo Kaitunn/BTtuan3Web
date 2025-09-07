@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<title>AUTUMN TRAVEL COMPANY</title>
+<style>
+/* ==== CƠ BẢN (gọn) ==== */
+*{box-sizing:border-box} body{margin:0;font-family:Arial,Helvetica,sans-serif;color:#603a14}
+.wrap{max-width:960px;margin:22px auto}
+
+/* ==== TIÊU ĐỀ + MENU (đúng màu / phát sáng) ==== */
+.title{
+  background:#9c5a1f;border:2px solid #7a4215;color:#fff;text-align:center;
+  padding:10px 6px;letter-spacing:3px;font-weight:800;font-size:28px;
+  text-shadow:0 0 2px #c6f7c6,0 0 4px #aaf0aa,0 0 6px #86e686;
+}
+nav{background:#9c5a1f;border:2px solid #7a4215;border-top:0;padding:8px 12px}
+nav a{color:#fff;text-decoration:none;margin-right:22px;font-weight:bold}
+nav a:hover{text-decoration:underline}
+
+/* ==== DẢI LÁ ==== */
+.banner{height:84px;border:2px solid #7a4215;border-top:0;
+  background:url('leaves.jpg') center/cover no-repeat,linear-gradient(90deg,#d8a24d,#d9b471,#d8a24d);
+}
+
+/* ==== 2 CỘT ==== */
+.main{display:grid;grid-template-columns:1.5fr 1fr;gap:24px;padding:22px 10px}
+@media(max-width:860px){.main{grid-template-columns:1fr}}
+
+h2{margin:0 0 12px;color:#9b6c17;letter-spacing:2px}
+.note{font-style:italic;color:#8b6f1c;font-size:13px;line-height:1.6;margin:6px 0 18px}
+
+/* form gạch dưới */
+.inp{width:100%;padding:10px 6px;border:0;border-bottom:2px solid #ddd;margin:14px 0}
+.btn{background:#b08c18;color:#fff;border:0;padding:10px 18px;font-weight:bold;border-radius:4px;cursor:pointer}
+.btn:hover{opacity:.95}
+
+/* sidebar */
+.box{background:#faf5ef;border:1px solid #e6dfd7;padding:14px}
+.box h3{margin:0 0 8px;color:#9b6c17}
+.box ul{margin:0;padding-left:18px}
+.box li{margin:6px 0}
+.box a{color:#603a14;text-decoration:none}
+.box a:hover{text-decoration:underline}
+
+/* footer */
+footer{border-top:1px solid #e6dfd7;text-align:center;padding:10px;color:#555;font-size:13px}
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="title">AUTUMN TRAVEL COMPANY</div>
+
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <a href="#">Products</a>
+      <a href="#">Services</a>
+      <a href="#">Order</a>
+    </nav>
+
+    <div class="banner"></div>
+
+    <div class="main">
+      <!-- Cột trái: form -->
+      <section>
+        <h2>Sign up for membership benefits</h2>
+        <p class="note">
+          Our philosophical values are transparency, respect, formality and responsibility.
+          Our stimulus is your enthusiasm. Our motto is your satisfaction.
+        </p>
+
+        <input class="inp" type="text" placeholder="Username">
+        <input class="inp" type="email" placeholder="E-mail">
+        <input class="inp" type="password" placeholder="Password">
+        <input class="inp" type="password" placeholder="Retype password">
+        <button class="btn">SIGN ME UP</button>
+      </section>
+
+      <!-- Cột phải: links + more info -->
+      <aside class="box">
+        <h3>Links</h3>
+        <ul>
+          <li><a href="#">Make your Own Tour</a></li>
+          <li><a href="#">Maldives Tours</a></li>
+          <li><a href="#">Nature &amp; Adventure</a></li>
+          <li><a href="#">Readymade Tours</a></li>
+          <li><a href="#">Europe Tours</a></li>
+          <li><a href="#">Russia Tours</a></li>
+        </ul>
+
+        <h3 style="margin-top:18px">More info</h3>
+        <p style="font-size:13px;line-height:1.6;text-align:justify">
+          Our purpose is the client who gives us the opportunity to serve and
+          to make known the reality around the world.
+        </p>
+      </aside>
+    </div>
+
+    <footer>© 2017 Software Engineering Department | Test Date: 16 Sept 2017</footer>
+  </div>
+</body>
+</html>
