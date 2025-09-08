@@ -17,6 +17,7 @@
       padding: 10px;
       display: flex;
       justify-content: space-between;
+      align-items: center;
     }
     nav a {
       color: white;
@@ -25,6 +26,15 @@
       font-weight: bold;
     }
     nav a:hover { text-decoration: underline; }
+
+    /* Logo chữ Sky World */
+    .logo {
+      font-size: 40px;
+      font-weight: bold;
+      color: #fff;
+      font-family: Georgia, serif;
+      text-shadow: 2px 2px 4px #c417e3, 0 0 8px #3fa9f5;
+    }
 
     /* Layout */
     .container {
@@ -59,9 +69,31 @@
     button:hover { background: #f0f0f0; }
 
     /* Right */
-    .right img { width: 100%; max-width: 400px; }
-    .headline { font-size: 20px; font-weight: bold; color: darkblue; margin-top: 10px; }
-    .sub { color: #222; }
+    .right img { width: 300%; max-width: 500px; }
+
+    .headline {
+  font-size: 32px;              
+  font-weight: bold;            
+  font-family: Georgia, serif;  
+  color: #0000cc;              
+  margin-top: 10px;
+  text-shadow: 
+    2px 2px 4px #1c09ea,           
+    0 0 6px #3fa9f5,            
+    0 0 12px #3fa9f5;
+    }           
+
+  .sub {
+  font-size: 20px;
+  margin-left: 120px;
+  color: #0033cc;
+  text-shadow: 
+    2px 2px 4px #1c09ea,           
+    0 0 6px #082bdb,            
+    0 0 12px #3fa9f5;               
+  margin-top: 5px;
+   }
+
 
     /* Footer */
     footer {
@@ -82,7 +114,7 @@
       <a href="#">About</a>
       <a href="#">Contact</a>
     </nav>
-    <div><b>Sky World</b></div>
+    <div class="logo">Sky World</div>
   </header>
 
   <div class="container">
@@ -107,11 +139,11 @@
         <label>Country</label>
         <input type="text" placeholder="Country">
 
-        <label>Specific questions</label>
+        <label>Specific questions or requests about your tour</label>
         <textarea rows="4"></textarea>
 
-        <button type="submit">Submit</button>
-        <button type="reset">Reset</button>
+        <button type="Submit">Submit</button>
+        <button type="Reset">Reset</button>
       </form>
     </div>
 
